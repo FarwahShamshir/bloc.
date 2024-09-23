@@ -1,16 +1,23 @@
-# bloc
+# Flutter Equatable Example
 
-A new Flutter project.
+This repository demonstrates how to use the [equatable](https://pub.dev/packages/equatable) package in a Flutter project. The `equatable` package simplifies equality comparisons between Dart objects, reducing boilerplate for overriding `==` and `hashCode`.
 
-## Getting Started
+## What is Equatable?
 
-This project is a starting point for a Flutter application.
+In Dart, objects are compared by reference, so to compare objects by their field values (like `name` and `age`), you usually override `==` and `hashCode`. The `equatable` package does this automatically, making equality comparisons cleaner and easier.
 
-A few resources to get you started if this is your first Flutter project:
+## Project Overview
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+This Flutter app demonstrates the use of `equatable` to compare two `Person` objects. When the floating action button is pressed, the app checks if two `Person` instances with the same properties (`name` and `age`) are equal.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Key Features:
+- The `Person` class extends `Equatable` and overrides the `props` method to specify the fields for comparison.
+- The `==` operator compares the property values (`name` and `age`), not the object references.
+- Logs the hash codes and comparison result when the floating action button is pressed.
+
+## How to Run the Project
+
+1. Clone the repository:
+   ```bash
+
+
