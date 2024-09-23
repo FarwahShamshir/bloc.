@@ -21,3 +21,4 @@ This Flutter app demonstrates the use of `equatable` to compare two `Person` obj
    ```bash
 
 
+![image](https://github.com/user-attachments/assets/e3e2ad6d-d801-4b47-a673-6e40beff10f8)
